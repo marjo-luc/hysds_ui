@@ -6,6 +6,7 @@ exports.FIGARO_DISPLAY_COLUMNS = [
   { Header: "node", accessor: "job.job_info.execute_node" },
   { Header: "timestamp", accessor: "@timestamp" },
   { Header: "duration", accessor: "job.job_info.duration" },
+  { Header: "endpoint", accessor: "job.endpoint_id" },
 ];
 
 exports.FILTERS = [
@@ -102,8 +103,8 @@ exports.FILTERS = [
   },
   {
     componentId: "endpoint_id",
-    dataField: "endpoint_id.keyword",
-    title: "Endpoint ID",
+    dataField: "job.endpoint_id",
+    title: "Endpoint",
     type: "single",
   },
 ];
@@ -162,5 +163,4 @@ exports.FIELDS = [
   "event.traceback",
   "user_tags",
   "dedup_job",
-  "endpoint_id",
 ];

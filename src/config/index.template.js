@@ -15,7 +15,8 @@ exports.MOZART_BASE_URL = "";
 
 // Mozart's ES url
 exports.MOZART_ES_URL = "/mozart_es";
-exports.MOZART_ES_INDICES = "job_status";
+//exports.MOZART_ES_INDICES = "job_status";
+exports.MOZART_ES_INDICES = "job_status,new_job_status";
 
 // Mozart's Rest API
 exports.MOZART_REST_API_BASE = "/mozart";
