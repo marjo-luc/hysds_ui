@@ -11,6 +11,12 @@ exports.FIGARO_DISPLAY_COLUMNS = [
 
 exports.FILTERS = [
   {
+    componentId: "endpoint_id",
+    dataField: "job.endpoint_id",
+    title: "ADES",
+    type: "single",
+  },
+  {
     componentId: "resource",
     dataField: "resource",
     title: "Resource",
@@ -99,12 +105,6 @@ exports.FILTERS = [
     componentId: "retry_count",
     dataField: "job.retry_count",
     title: "Retry Count",
-    type: "single",
-  },
-  {
-    componentId: "endpoint_id",
-    dataField: "job.endpoint_id",
-    title: "Endpoint",
     type: "single",
   },
 ];
